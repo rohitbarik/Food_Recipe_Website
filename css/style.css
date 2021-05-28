@@ -120,7 +120,7 @@
   /* welcome section */
   #welcome-section{
       height: 80vh;
-      background-image: url("/berry.jpg");
+      background-image: url("berry.jpg");
       background-size: cover;
       margin: 40px 20px;
   }
