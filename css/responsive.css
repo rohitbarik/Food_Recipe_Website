@@ -1,0 +1,241 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* hamburger menu */
+.burger{
+    position: absolute;
+    top: 7px;
+    right: 2%;
+    cursor: pointer;
+    display: none;
+
+}
+
+.line{
+    width: 30px;
+    height: 2px;
+    background-color: #e2f6cc;
+    margin: 5px 3px;
+}
+/* responsive */
+@media  screen and (max-width:1370px) {
+    
+    /* #logo img {
+        height: 38px;
+    } */
+    .navbar ul li{
+        font-size: 1.2rem;
+    }
+    .navbar{
+        width: 95%;
+    }
+}
+@media  screen and (max-width:1100px) {
+    
+    /* #logo img {
+        height: 35px;
+    } */
+    .navbar ul li{
+        font-size: 1.2rem;
+    }
+    .navbar{
+        width: 94%;
+    }
+    #footer-text,
+    #footer-centerText{
+        font-size: 14px;
+    }
+  
+
+
+}
+@media  screen and (max-width:1024px) {
+    
+    /* #logo img {
+        height: 35px;
+    } */
+    .navbar ul li{
+        font-size: 1.2rem;
+    }
+    .navbar{
+        width: 94%;
+    }
+    #footer-img {
+        height: 96px;
+        width: 96px;
+    }
+    .social-items {
+        font-size: 30px;
+    }
+    .footer-box {
+        margin: 4px 58px;
+    }
+
+    
+
+}
+@media  screen and (max-width:900px) {
+    #footer-img {
+        height: 94px;
+        width: 94px;
+    }
+    .social-items {
+        font-size: 26px;
+    }
+    #footer-text,
+    #footer-centerText{
+        font-size: 12px;
+    }
+    .footer-box {
+        margin: 0px 54px;
+    }
+
+}
+@media  screen and (max-width:770px) {
+    
+    .navbar{
+        height: 200px;
+        flex-direction: column;
+        transition: all 1s ease-out;
+        background-color: #7c4c27;
+    }
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar ul li {
+        font-size: 1.2rem;
+        margin: 7px 0px;
+    }
+    .burger{
+        display: block;
+    
+    }
+    
+    .nav-h{
+        height: 40px;
+        background-color: transparent;
+    }
+    .v-class{
+        opacity: 0;
+    }
+    #logo img {
+        height: 35px;
+    }
+    #footer-text,
+    #footer-centerText{
+        font-size: 10px;
+    }
+    #footer{
+        padding: 0px;
+    }
+    .footer-box {
+        margin: 0px 50px;
+        height: 140px;
+    }
+    .navbar {
+        width: 91%;
+    }
+    #footer-img {
+        height: 80px;
+        width: 80px;
+    }
+    .social-items {
+        font-size: 20px;
+    }
+}
+@media  screen and (max-width:650px){
+    .footer-box {
+        margin: 0px 41px;
+        /* padding: 0px; */
+        height: 135px;
+    }
+    .social-links ul {
+        padding: 0px;
+    }
+    #footer-text,
+    #footer-centerText{
+        font-size: 9px;
+    }
+    #footer-img {
+        height: 67px;
+        width: 67px;
+    }
+    .footer-box {
+        height: 135px;
+        width: 160px;
+        margin: 0px 12px;
+    }
+    .social-items {
+        font-size: 19px;
+        padding: 0px 10px;
+    }
+
+}
+@media  screen and (max-width:500px){
+    .navbar {
+        width: 89%;
+        /* height: 38px; */
+    }
+    .footer-box {
+        height: 135px;
+        width: 160px;
+        margin: 0px 15px;
+    }
+    #footer-img {
+        height: 65px;
+        width: 65px;
+    }
+    .social-items {
+        font-size: 19px;
+        padding: 0px 14px;
+    }
+    
+    
+    
+
+}
+@media  screen and (max-width:426px){
+    .navbar {
+        width: 84%;
+        /* height: 38px; */
+    }
+    .footer-box {
+        height: 121px;
+        width: 154px;
+        margin: 0px 5px;
+    }
+    .social-items {
+        font-size: 18px;
+        padding: 0px 10px;
+    }
+    #footer-img {
+        height: 60px;
+        width: 60px;
+
+        padding: 8px;
+    }
+
+}
+@media  screen and (max-width:335px){
+    .footer-box {
+        height: 121px;
+        width: 131px;
+        margin: 0px 5px;
+    }
+    #footer-img {
+        height: 50px;
+        width: 50px;
+        padding: 4px;
+    }
+    #footer-text, #footer-centerText {
+        font-size: 7px;
+    }
+    .navbar {
+        width: 80%;
+        /* height: 38px; */
+    }
+
+}

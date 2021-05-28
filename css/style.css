@@ -1,0 +1,644 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Navigation Bar logo and img*/
+
+#logo img {
+    height: 46px;
+    margin: 2px 9px;
+    z-index: 1;
+    cursor: pointer;
+    filter: invert(100%);
+    position: absolute;
+    left: 20px;
+    top: 0%;
+}
+
+/* Navigation Bar*/
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    left: 31px;
+    background-color: transparent;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 96%;
+    z-index: 1;
+    height: 50px;
+}
+
+/* Navigation Bar: List Styling */
+
+.navbar ul{
+    display: flex;
+    
+}
+.navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: 560;
+    font-family: 'Sacramento', cursive;
+    
+}
+.navbar ul li a{
+    padding: 0px 18px;
+    text-decoration: none;
+    color: rgb(222 255 187);
+}
+.navbar ul li a:hover, .navbar ul li a.active{
+    color: black;
+    background-color: rgb(222 255 187);
+    border-radius: 35px;
+    
+}
+
+/* Home Section */
+#home-center{
+    display: flex;
+    flex-direction: column;
+    /* padding:70px 212px; */
+    /* position: relative; */
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    /* padding:70px 212px; */
+    position: relative;
+    height: 100vh;
+    /*justify-content: center;*/
+    align-items: center;
+}
+/* #center{
+    bottom: 20px;
+    position: relative;
+    bottom: 48px;
+} */
+#img{
+    height: 240px;
+    filter: invert(100%);
+    cursor: pointer;
+}
+#home h1{
+    color: rgb(254 255 206);
+    text-align: center;
+    /* position: relative; */
+    /* bottom: 5%; */
+}
+.h1-primary{
+    font-size: 7rem;
+    font-family: 'Great Vibes', cursive;
+}
+#home p{
+    color:rgb(255 245 237);
+    text-align: center;
+    font-size: 3.5rem;
+    /* position: relative;
+    bottom: 5%; */
+    font-family: 'Sacramento', cursive;
+}
+#video-container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    height: 100vh;
+  }
+  #video{
+      object-fit: cover;
+      height: 100vh;
+      width: 100vw;
+  }
+  /* welcome section */
+  #welcome-section{
+      height: 80vh;
+      background-image: url("/berry.jpg");
+      background-size: cover;
+      margin: 40px 20px;
+  }
+  #welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 345px;
+    width: 503px;
+    justify-content: space-evenly;
+    position: relative;
+    top: 17%;
+    left: 53vw;
+    padding: 26px;
+    background: rgb(255 255 255 / 42%);
+}
+  #welcome-heading{
+    font-size: 3rem;
+    color: #5f0d29;
+    font-family: 'Great Vibes', cursive;
+  }
+  #welcome-text{
+      font-size: 1rem;
+      padding: 0px 13px;
+      font-family: 'Cormorant', serif;
+      font-weight: 600;
+  }
+
+  /* popular recipe section  */
+
+  #popular-recipies-container .title{
+    color:black;
+    text-align: center;
+    font-size: 3.5rem;
+    cursor: pointer;
+    font-family: 'Great Vibes', cursive;
+  }
+  #popular-recipies{
+      margin: 40px;
+      display: flex;
+  }
+  #popular-recipies .box{
+      padding: 1%;
+  }
+  .item-img{
+    height: 444px;
+    width: 300px;
+    margin: auto;
+    display: block;
+    box-shadow: 0px 0px 26px 7px #454441;
+    cursor: pointer;
+}
+#popular-recipies .box .item-title{
+    color: black;
+    text-align: center;
+    padding: 3%;
+    font-size: 30px;
+    font-family: 'Playfair Display SC', serif;
+    cursor: pointer;
+}
+#popular-recipies .box .item-text{
+    text-align: center;
+    font-family: 'Cormorant', serif;
+    font-weight: 600;
+    padding: 0px 50px;
+}
+#btn-container{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    padding: 6px 7px;
+    margin-bottom: 12px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px #454441;
+}
+.btn:hover{
+    background-color:  rgb(222 255 187);
+    color: black;
+}
+
+/* footer*/
+#footer{
+    padding: 10px;
+    text-align: center;
+    color: white;
+   
+    background-color: rgb(44 44 43);
+    display: flex;
+    justify-content: center
+}
+.footer-box{
+    height: 167px;
+    width: 20%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 8px 66px;
+}
+
+
+#footer-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#footer-img{
+    height: 100px;
+    width: 100px;
+    padding: 16px;
+    filter: invert(100%);
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+}
+.social-links ul{
+    display: flex;
+    height: 32px;
+    padding: 10px;
+    justify-content: center;
+}
+.social-items{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 32px;
+    cursor: pointer;
+}
+#facebook{
+    color: blue;
+}
+#instagram{
+    color: crimson;
+}
+#twitter{
+    color: cyan;
+}
+#youtube{
+    color: red;
+}
+
+#footer-text{
+    font-size: 1rem;
+}
+/* responsive */
+@media  screen and (max-width:1442px){
+    #welcome {
+        width: 500px;
+        left: 53vw;
+    }
+}
+@media  screen and (max-width:1370px){
+    #welcome {
+        width: 500px;
+        left: 52vw;
+        height: 343px;
+        top: 16%;
+        padding: 25px;
+    }
+}
+@media  screen and (max-width:1270px){
+    #welcome {
+        display: flex;
+        flex-direction: column;
+        width: 481px;
+        height: 326px;
+        justify-content: center;
+        position: relative;
+        top: 16%;
+        left: 49vw;
+        padding: 22px;
+        background: rgb(255 255 255 / 42%);
+        align-items: center;
+    }
+    #welcome-heading {
+        margin: 15px 0px;
+    }
+    #popular-recipies .box {
+        padding: 0%;
+    }
+    .item-img {
+        height: 434px;
+        width: 290px;
+
+    }
+    #popular-recipies .box .item-title {
+        padding: 11px 0px;
+        font-size: 26px;
+    }
+    #popular-recipies .box .item-text {
+        padding: 0px 40px;
+    }
+    #welcome-section {
+        height: 75vh;
+        background-size: 100% 100%;
+    }
+}
+@media  screen and (max-width:1100px) {
+ 
+    #welcome-section {
+        height: 73vh;
+        background-size: 100% 100%;
+    }
+    #welcome {
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+        height: 300px;
+        justify-content: center;
+        position: relative;
+        top: 16%;
+        left: 42vw;
+        padding: 20px;
+        background: rgb(255 255 255 / 42%);
+        align-items: center;
+    }
+    #welcome-heading {
+        margin: 5px 0px;
+    }
+    #welcome-text {
+        font-size: 15px;
+        padding: 0px 6px;
+        font-family: 'Cormorant', serif;
+        font-weight: 600;
+    }
+    .item-img {
+        height: 424px;
+        width: 280px;
+    }
+    #popular-recipies .box .item-text {
+        padding: 0px 30px;
+    }
+    #popular-recipies {
+        margin: 30px 20px;
+        display: flex;
+    }
+    #popular-recipies-container .title {
+       
+        margin-bottom: 40px;
+    }
+
+}
+@media  screen and (max-width:1024px) {
+    #img {
+        height: 228px;
+    }
+    .h1-primary {
+        font-size: 6.4rem;
+    }
+    #home p {
+        font-size: 3rem;
+    }
+    #welcome-section {
+        height: 71vh;
+    }
+    #welcome {
+        width: 450px;
+        height: 300px;
+        top: 17%;
+        left: 43vw;
+        padding: 17px;
+    }
+    .item-img {
+        height: 414px;
+        width: 270px;
+    }
+    #popular-recipies .box .item-title {
+        padding: 12px 0px;
+        font-size: 25px;
+    }
+    #popular-recipies .box .item-text {
+        padding: 0px 15px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    #welcome-section {
+        height: 63vh;
+    }
+    #welcome-heading {
+        font-size: 38px;
+    }
+    #welcome-text {
+        font-size: 13px;
+    }
+    #welcome {
+        width: 400px;
+        height: 250px;
+        left: 41vw;
+    }
+    .item-img {
+        height: 390px;
+        width: 246px;
+    }
+    #popular-recipies .box .item-text {
+        padding: 0px 15px;
+        font-size: 14px;
+    }
+    .btn {
+        font-size: 11px;
+    }
+    #popular-recipies-container .title {
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 768px){
+    #img {
+        height: 200px;
+    }
+    .h1-primary {
+        font-size: 5.4rem;
+    }
+    #home p {
+        font-size: 2.2rem;
+    }
+    #welcome {
+        width: 358px;
+        height: 240px;
+        left: 35vw;
+    }
+    #welcome-text {
+        font-size: 12px;
+    }
+    #welcome-section {
+        height: 56vh;
+    }
+    .item-img {
+        height: 340px;
+        width: 216px;
+    }
+    #popular-recipies .box .item-text {
+        padding: 0px 14px;
+        font-size: 12px;
+    }
+    #popular-recipies .box .item-title {
+        padding: 12px 0px;
+        font-size: 18px;
+    }
+    #popular-recipies-container .title {
+        font-size: 2.6rem;
+    }
+}
+@media screen and (max-width: 650px) {
+    #popular-recipies {
+        flex-direction: column;
+    }
+    #popular-recipies .box {
+        padding: 15px 0px;
+    }
+    .item-img {
+        height: 355px;
+        width: 241px;
+    }
+    #popular-recipies .box .item-title {
+        padding: 12px 0px;
+        font-size: 27px;
+    }
+    #popular-recipies .box .item-text {
+        padding: 0px 96px;
+        font-size: 14px;
+    }
+    #welcome {
+        width: 348px;
+        height: 230px;
+        left: 30vw;
+    }
+    #welcome-section {
+        height: 50vh;
+    }
+
+}
+@media screen and (max-width: 500px){
+    #welcome {
+        width: 320px;
+        height: 200px;
+        left: 12vw;
+        top: 13%;
+    }
+    #welcome-heading {
+        font-size: 35px;
+    }
+    #welcome-text {
+        font-size: 11px;
+    }
+    #welcome-section {
+        height: 45vh;
+        margin: 20px 8px;
+
+    }
+    #img {
+        height: 150px;
+    }
+    .h1-primary {
+        font-size: 4.4rem;
+    }
+    #home p {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px){
+    #img {
+        height: 140px;
+    }
+    .h1-primary {
+        font-size: 4.2rem;
+    }
+    #home p {
+        font-size: 1.8rem;
+    }
+    #welcome-section {
+        height: 40vh;
+        margin: 16px 6px;
+    }
+    #welcome {
+        width: 300px;
+        height: 180px;
+        left: 10vw;
+        top: 13%;
+    }
+    #welcome-heading {
+        font-size: 30px;
+    }
+    #welcome-text {
+        font-size: 9.5px;
+    }
+    .item-img {
+        height: 345px;
+        width: 230px;
+    }
+    #popular-recipies .box .item-title {
+        padding: 12px 0px;
+        font-size: 23px;
+    }
+    #popular-recipies .box .item-text {
+        padding: 0px 57px;
+        font-size: 12px;
+    }
+    .btn {
+        font-size: 9px;
+    }
+    #popular-recipies-container .title {
+        margin-bottom: 0px;
+    }
+}
+@media screen and (max-width: 376px){
+    .h1-primary {
+        font-size: 3.6rem;
+    }
+    #welcome {
+        width: 285px;
+        height: 180px;
+        left: 8vw;
+        top: 13%;
+        padding: 10px;
+    }
+    #popular-recipies-container .title {
+        font-size: 2.2rem;
+    }
+    .item-img {
+        height: 334px;
+        width: 220px;
+    }
+    #popular-recipies .box .item-title {
+        padding: 12px 0px;
+        font-size: 20px;
+    }
+    #home {
+        height: 95vh;
+    }
+}
+@media screen and (max-width: 321px){
+    #welcome-section {
+        height: 37vh;
+        margin: 11px 2px;
+    }
+    #welcome {
+    width: 270px;
+    height: 170px;
+    left: 4vw;
+    top: 12%;
+    padding: 10px;
+    }
+    .h1-primary {
+        font-size: 3.2rem;
+    }
+    #home p {
+        font-size: 1.5rem;
+    }
+    #img {
+        height: 120px;
+    }
+    #home {
+        height: 90vh;
+    }
+    #popular-recipies-container .title {
+        font-size: 2.1rem;
+    }
+    .item-img {
+        height: 319px;
+        width: 205px;
+    }
+    #popular-recipies .box .item-title {
+        padding: 12px 0px;
+        font-size: 18px;
+    }
+    #popular-recipies .box .item-text {
+        padding: 0px 30px;
+        font-size: 11px;
+    }
+}
